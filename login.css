@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(41, 58, 111);
 }
 .contenedor{
     width: 100%;
@@ -15,9 +15,10 @@ body{
 }
 
 .contenedor2{
-    background-color: rgb(213, 213, 213); 
-    width: 500px;
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255); 
+    width: 480px;
+    min-height: 500px;
+    border-radius: 0px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -32,33 +33,67 @@ body{
 .nombreUsuario{
     font-size: 110%;
     font-weight: bold;
+    color: rgb(41, 58, 111);
 }
 
 
 .cajade_texto, .input_contraseña {
-    border-radius: 5px;
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 1px solid rgb(41, 58, 111) !important;
+    width: 100%;
+    padding: 5px;
 }
+
+.cajade_texto:focus, .input_contraseña:focus,
+.cajade_texto:active, .input_contraseña:active {
+    border: 0px;
+    background-color: #ffffff; 
+    outline: none;
+    box-shadow: none; 
+}
+
 
 .contraseña{
     font-size: 110%;
     font-weight: bold;
+    color: rgb(41, 58, 111);
 }
 
 
 .btn_iniciarSesion{
-   float: right;
-   border-radius: 5px;
+    float: right;
+    border-radius: 0px;
+    background-color: rgb(41, 58, 111);
+    color: white;
+    border-color: transparent;
+    min-width: 105px;
+}
+
+.btn_iniciarSesion:hover{
+    background-color: transparent;
+    color: rgb(41, 58, 111);
+    border-color: rgb(41, 58, 111);
 }
 
 .btn_acceder{
     float: left;
-    border-radius: 5px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: rgb(41, 58, 111);
+    border-color: rgb(41, 58, 111);
+    min-width: 105px;
+}
+
+.btn_acceder:hover{
+    background-color: rgb(41, 58, 111);
+    color: white;
+   border-color: transparent;
 }
 
 .imagen_logo{
     width: 100%;
 }
-
 
 /*Seccion responsive tablet*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -81,6 +116,7 @@ body{
 @media only screen and (min-width: 0px) and (max-width: 575px) {
     .contenedor2{ 
         width: 90%;
+        min-height: 450px;
     }
     .contenedor_para_centrar{
         width: 100%;
