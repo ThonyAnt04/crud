@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.contenedor2{
+    background-color: rgb(175, 174, 174); 
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contenedor_para_centrar{
+    width: 450px;
+    height: 350px;
+    position: relative;
+}
+
+.imagen_logo{
+    width: 300px;
+    margin-left: 73px;
+}
+
+.text-login{
+    margin-top: 1%;
+    margin-left: 166px;
+    
+}
+
+.nombreUsuario{
+    margin-top: 20px;
+    margin-left: 1%;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.cajade_texto{
+    margin-left: 0.5%;
+    margin-top: 3%;
+}
+
+.contraseña{
+    font-size: 110%;
+    margin-left: 1%;
+    margin-top: 7%;
+    font-weight: bold;
+}
+
+.input_contraseña{
+    margin-left: 0.5%;
+    margin-top: 3%;
+} 
+
+.btn_iniciarSesion{
+    margin-left: 107px;
+    margin-top: 33px;
+    width: 120px;
+}
+
+.btn_acceder{
+    margin-left: 50px;
+    margin-top: 33px;
+    width: 120px;
+}
